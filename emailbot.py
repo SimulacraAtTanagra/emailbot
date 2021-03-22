@@ -8,8 +8,8 @@ Created on Wed Dec 30 17:37:47 2020
 import os
 import datetime as dt
 import win32com.client as win32com
-from admin import read_json
-from emaildata import refresh_lists
+from src.admin import read_json
+from src.emaildata import refresh_lists
 outlook = win32com.Dispatch("Outlook.Application").GetNamespace("MAPI")
 
 #TODO set up replacement function (dictionary call) for off-names (Greg, Linda)
